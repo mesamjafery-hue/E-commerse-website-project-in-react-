@@ -1,0 +1,207 @@
+.product-table-section {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.product-table-section h3 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product-table-section .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.product-table-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Search Input */
+.product-table-section .form-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.product-table-section .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-header h5 {
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Table Styling */
+.table-responsive {
+  border-radius: 8px 8px 0 0;
+}
+
+.table {
+  margin-bottom: 0;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table thead th {
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 15px;
+  color: #555;
+  font-weight: 500;
+}
+
+.table tbody img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Badge Styles */
+.badge {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.badge.bg-info {
+  background-color: #0dcaf0 !important;
+  color: #333;
+}
+
+.badge.bg-success {
+  background-color: #198754 !important;
+}
+
+/* Action Buttons */
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary {
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.btn-outline-primary:hover {
+  background-color: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* Card Footer */
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 20px;
+}
+
+.card-footer p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card-footer strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Empty State */
+.p-4.text-center {
+  padding: 40px 20px !important;
+}
+
+.p-4.text-center p {
+  color: #999;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 10px 8px;
+  }
+
+  .btn-sm {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+}

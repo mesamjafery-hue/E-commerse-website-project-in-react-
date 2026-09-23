@@ -1,0 +1,146 @@
+.products-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding-bottom: 40px;
+}
+
+.page-header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 80px;
+}
+
+.filter-section h5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.filter-section .form-control {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.filter-section .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-check-label:hover {
+  color: #667eea;
+}
+
+/* Results Info */
+.results-info {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+}
+
+.results-info p {
+  margin: 0;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Products Grid */
+.row {
+  display: grid;
+  gap: 20px;
+}
+
+/* Flexbox Products Container */
+.products-flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.product-flex-item {
+  display: flex;
+  width: 100%;
+}
+
+/* Alert for no results */
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .products-flex-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .products-flex-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .product-flex-item {
+    flex: 1 1 100%;
+  }
+}
